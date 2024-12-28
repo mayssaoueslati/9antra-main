@@ -1,0 +1,175 @@
+.dashboard-wrapper {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.new-course-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.courses-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.course-card-wrapper {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.course-card-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.course-thumbnail-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.course-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-details {
+  padding: 15px;
+}
+
+.course-name {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.course-cost {
+  font-size: 20px;
+  color: #4CAF50;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+}
+
+.card-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.modify-button,
+.remove-button {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.modify-button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.remove-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content-wrapper {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.file-upload-input {
+  display: block;
+  margin-top: 8px;
+}
+
+.preview-wrapper {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.image-placeholder {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.popup-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.confirm-button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.cancel-button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f44336;
+  color: white;
+  cursor: pointer;
+}

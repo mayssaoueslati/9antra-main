@@ -1,0 +1,128 @@
+.courses-container {
+    margin: auto;
+    max-width: 1600px;
+    padding: 20px;
+  }
+  
+  .courses-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  .courses-header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .view-more-btn {
+    background-color: #B4336D;
+    color: white;
+    border: none;
+    width: 200px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  .view-more-btn:hover {
+    background-color: #933057;
+  }
+  
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+    padding: 0 15px;
+  }
+  
+  .course-card {
+    background-color: #fff;
+    
+    
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .course-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .course-card h2 {
+    font-size: 1.5rem;
+    margin: 12px;
+    font-weight: bold;
+  }
+  
+  .course-card .price {
+    color: #B4336D;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0 12px 12px;
+  }
+  
+ 
+  @media (max-width: 992px) {
+    .courses-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    .courses-header h1 {
+      font-size: 2.8rem;
+    }
+  }
+  
+
+  @media (max-width: 576px) {
+    .courses-grid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .courses-header {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+  
+    .courses-header h1 {
+      font-size: 2rem;
+    }
+  
+    .view-more-btn {
+      width: 180px;
+      font-size: 20px;
+      padding: 12px 25px;
+    }
+  
+    .course-image {
+      height: 180px;
+    }
+  
+    .course-card h2 {
+      font-size: 1.3rem;
+    }
+  
+    .course-card .price {
+      font-size: 1.2rem;
+    }
+  }
